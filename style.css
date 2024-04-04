@@ -72,11 +72,6 @@ li {
     margin: 5px 0;
 }
 
-.app-info a {
-    color: #ff6b6b;
-    text-decoration: none;
-}
-
 .app-info a:hover {
     text-decoration: underline;
 }
