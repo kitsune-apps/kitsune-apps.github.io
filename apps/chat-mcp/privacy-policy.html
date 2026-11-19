@@ -14,108 +14,182 @@
 
     <main>
       <section>
-        <p>Effective Date: 06/28/2024</p>
+        <p>Effective Date: November 19, 2026</p>
 
         <p>
-          This Privacy Policy explains how Kitsune Apps ("we," "us," or "our")
-          collects, uses, and discloses information when you use our mobile
-          application, ChatMCP ("the App"). By using the App, you agree to the
-          collection and use of information in accordance with this Privacy
-          Policy.
+          This Privacy Policy explains what information ChatMCP ("the App")
+          uses, where that information goes, and the choices you have. It
+          applies to ChatMCP on iOS (from the Apple App Store) and on Android
+          (from Google Play). ChatMCP is made by Kitsune Apps, LLC ("Kitsune
+          Apps," "we," "us," or "our").
+        </p>
+        <p>
+          Please also read our
+          <a href="terms.html">Terms of Service</a>.
         </p>
 
-        <h2>1. Information We Collect</h2>
+        <h2>The Short Version</h2>
         <ul>
           <li>
-            <strong>User-Initiated Data Access:</strong> The App accesses your
-            device's local tools such as Calendars, Contacts, Mail, Reminders,
-            and other iOS features only when you initiate such interactions.
+            ChatMCP has <strong>no accounts</strong>. There is no sign-up or
+            login, and we don't run a server that stores your chats.
           </li>
           <li>
-            <strong>LLM Provider Connections:</strong> The App enables you to
-            connect with various language learning model (LLM) providers
-            including Anthropic, Gemini, OpenAI, and others.
+            Your chats, settings and API keys are stored
+            <strong>on your device</strong>.
           </li>
           <li>
-            <strong>Firebase Analytics:</strong> We collect usage data through
-            Firebase Analytics to help us understand how users interact with our
-            App.
+            Your messages, and any device data the assistant uses to answer
+            you, are sent <strong>directly from your device to the AI
+            provider you choose</strong>, using your own API key. That
+            provider's privacy policy applies to what it receives.
+          </li>
+          <li>
+            ChatMCP reads your contacts, calendar, location, photos and other
+            device data <strong>only when you ask it to</strong>, and only after
+            you grant permission.
+          </li>
+          <li>
+            We use Google Firebase Analytics to collect usage events. These are
+            linked to a random ID, not to your name. They never include the
+            content of your messages or your API keys.
+          </li>
+          <li>
+            There are no ads, we don't use the Advertising ID, and we don't sell
+            your data.
           </li>
         </ul>
 
-        <h2>2. How We Use Your Information</h2>
-        <ul>
-          <li>
-            <strong>Core Functionality:</strong> We use the data accessed from
-            your local tools solely to provide the functionality you request
-            within the App.
-          </li>
-          <li>
-            <strong>Third-Party LLM Services:</strong> When you use the App to
-            connect to LLM providers, data you retrieve from your local tools
-            (such as calendar events, contacts, etc.) is sent to your chosen LLM
-            provider to generate responses and process your requests.
-          </li>
-          <li>
-            <strong>Analytics:</strong> We use Firebase Analytics to collect
-            anonymous usage statistics that help us improve the App's
-            functionality and user experience.
-          </li>
-        </ul>
-
-        <h2>3. Data Storage and Retention</h2>
+        <h2>1. How ChatMCP Works</h2>
         <p>
-          ChatMCP does not store any user data on our servers. The App operates
-          as an interface that facilitates communication between:
+          ChatMCP is an AI chat app. You connect your own AI provider with your
+          own API key. The App supports Anthropic (Claude), Google (Gemini),
+          OpenAI, OpenRouter, and "Custom" providers: OpenAI-compatible servers
+          that you run or choose yourself, for example a local Ollama server.
+          On iOS, you can also use Apple's on-device model, which processes
+          your messages on your device and sends nothing off it.
         </p>
-        <ul>
-          <li>Your device's local tools</li>
-          <li>Your chosen LLM providers</li>
-          <li>MCP servers (when applicable)</li>
-        </ul>
         <p>
-          Any data processed remains temporary and is not retained by us after
-          your session ends.
+          The assistant can use <strong>tools</strong> on your device (for
+          example, to look up a contact or a calendar event) and tools on
+          remote <strong>MCP (Model Context Protocol) servers</strong> that you
+          add. Some MCP servers ask you to sign in with them in your browser.
         </p>
 
-        <h2>4. Information Sharing and Disclosure</h2>
+        <h2>2. Information Stored on Your Device</h2>
+        <p>
+          The following stays on your device and is not sent to us:
+        </p>
+        <ul>
+          <li>Your chat history</li>
+          <li>Your settings, including the providers and MCP servers you add</li>
+          <li>
+            Your API keys, which are kept in your platform's secure storage. An
+            API key is only sent to the provider it belongs to.
+          </li>
+        </ul>
+        <p>
+          Deleting a chat removes it from the App. Clearing the App's data or
+          uninstalling the App deletes all of it. Information that has already
+          been sent to an AI provider or MCP server is covered by that
+          service's policy (see Section 4).
+        </p>
+
+        <h2>3. Device Features ChatMCP Can Use</h2>
+        <p>
+          The App uses these features only when you ask the assistant to do
+          something that needs them. Each one is behind your operating
+          system's permission prompt, and you can turn it off at any time (see
+          Section 9).
+        </p>
         <ul>
           <li>
-            <strong>LLM Providers:</strong> When you use the App to interact
-            with LLM providers (Anthropic, Gemini, OpenAI, etc.), the data you
-            choose to share, including content retrieved from your local tools,
-            is transmitted to these third-party services. This transmission is
-            necessary for the functionality you request.
+            <strong>Contacts:</strong> read, for example to find someone's
+            phone number or email address.
           </li>
           <li>
-            <strong>MCP Servers:</strong> If you utilize MCP server connections,
-            data will be transmitted to these servers according to their own
-            privacy practices.
+            <strong>Calendar:</strong> read your events, and create, edit or
+            delete events when you ask.
           </li>
           <li>
-            <strong>Legal Requirements:</strong> We may disclose your
-            information if required to do so by law or in response to valid
-            requests by public authorities.
+            <strong>Reminders (iOS only):</strong> to work with your reminders
+            when you ask.
+          </li>
+          <li>
+            <strong>Location:</strong> your current location, only while you
+            are using the App. ChatMCP never accesses your location in the
+            background.
+          </li>
+          <li>
+            <strong>Photos:</strong> your recent photos, or photos from a date
+            range, including the location stored in each photo (EXIF data).
+            Attaching a picture to a message uses the system photo picker.
+          </li>
+          <li>
+            <strong>Camera:</strong> to take a picture through your device's
+            camera app.
+          </li>
+          <li>
+            <strong>Microphone:</strong> for dictation, using your operating
+            system's speech recognizer. The App receives only the transcribed
+            text.
+          </li>
+          <li>
+            <strong>Messages, email and phone calls:</strong> the App only
+            <em>opens</em> your device's messaging app, email composer or phone
+            dialer with fields filled in. You decide whether to send or call.
+            ChatMCP never reads your text messages, emails or call history.
+          </li>
+          <li>
+            <strong>Text to speech:</strong> uses your operating system's voice
+            engine.
           </li>
         </ul>
 
-        <h2>5. Third-Party Privacy Policies</h2>
+        <h2>4. Where Your Information Goes</h2>
+
+        <h3>4.1 The AI provider you choose</h3>
         <p>
-          This Privacy Policy does not apply to third-party LLM providers or
-          services that you connect through our App. We recommend reviewing the
-          privacy policies of any third-party services you use through ChatMCP:
+          Every time you send a message, the App sends the following directly
+          from your device to the AI provider you selected, using your API key:
+        </p>
+        <ul>
+          <li>Your message, whether typed or dictated</li>
+          <li>Any images you attach</li>
+          <li>The system prompt (the instructions the App gives the model)</li>
+          <li>
+            The results of any tools the assistant used to answer you. This can
+            include contact details, calendar events, your location, photos
+            and their location, weather, and the current time.
+          </li>
+        </ul>
+        <p>
+          Contact details may include information about other people (such as
+          their names, phone numbers and email addresses). Please consider this
+          before asking the assistant about your contacts.
+        </p>
+        <p>
+          This information does not pass through our servers. Each provider
+          handles it under its own privacy policy and terms, which may allow it
+          to keep your data for some time and, depending on your plan or
+          settings with that provider, to use it to improve its services.
+          Please review them:
         </p>
         <ul>
           <li>
             Anthropic:
-            <a href="https://www.anthropic.com/privacy"
-              >https://www.anthropic.com/privacy</a
+            <a href="https://www.anthropic.com/legal/privacy"
+              >https://www.anthropic.com/legal/privacy</a
             >
           </li>
           <li>
             Google (Gemini):
             <a href="https://policies.google.com/privacy"
               >https://policies.google.com/privacy</a
+            >
+            and the Gemini API terms at
+            <a href="https://ai.google.dev/gemini-api/terms"
+              >https://ai.google.dev/gemini-api/terms</a
             >
           </li>
           <li>
@@ -124,65 +198,298 @@
               >https://openai.com/policies/privacy-policy</a
             >
           </li>
+          <li>
+            OpenRouter:
+            <a href="https://openrouter.ai/privacy"
+              >https://openrouter.ai/privacy</a
+            >. OpenRouter forwards your requests to the model provider you
+            pick, whose own policy also applies.
+          </li>
+          <li>
+            <strong>Custom providers:</strong> the server you enter receives
+            the same information. Whoever runs that server is responsible for
+            it.
+          </li>
+          <li>
+            <strong>Apple's on-device model (iOS only):</strong> nothing is
+            sent off your device.
+          </li>
         </ul>
 
-        <h2>6. Analytics</h2>
+        <h3>4.2 MCP servers you add</h3>
         <p>
-          We use Firebase Analytics to collect usage data that helps us improve
-          the App. This may include:
+          When the assistant uses a tool from an MCP server you added, the App
+          sends that server the tool-call details the model chooses. These can
+          include content from your conversation. If a server requires sign-in,
+          you sign in with that server in your browser. MCP servers are run by
+          their own operators, not by us, and each operator's privacy policy
+          applies. Only add servers you trust.
+        </p>
+
+        <h3>4.3 Analytics (Google Firebase Analytics)</h3>
+        <p>
+          The App uses Firebase Analytics to help us understand how ChatMCP is
+          used and to find problems. It sends:
         </p>
         <ul>
-          <li>App usage statistics</li>
-          <li>Device information</li>
-          <li>Feature usage patterns</li>
+          <li>
+            <strong>Usage events:</strong> app opened; message sent (the model
+            name and the message's length, not its content); message failed to
+            send (including the error text); tool used (the tool's name); MCP
+            server added or edited (the server's name and a hash of its URL);
+            paywall shown; purchase-mode settings changed; and AI response
+            reported (the reason, provider, model and response length).
+          </li>
+          <li>
+            <strong>Device information:</strong> your device model and
+            operating system version.
+          </li>
+          <li>
+            <strong>Identifiers:</strong> a Firebase app-instance ID, and a
+            random ID that the App generates and sets as your analytics user
+            ID.
+          </li>
+          <li>
+            <strong>Standard Firebase data:</strong> Firebase also collects
+            some information automatically, such as first opens, sessions and
+            basic diagnostics. On Android, this can include the Google Play
+            install referrer (how you found the App). See
+            <a href="https://firebase.google.com/support/privacy"
+              >https://firebase.google.com/support/privacy</a
+            >.
+          </li>
         </ul>
         <p>
-          This data is anonymized and used solely for improving our services and
-          understanding user behavior.
+          This data is <strong>pseudonymous</strong>, not anonymous: it isn't
+          linked to your name or email address, but the random user ID stays
+          the same each time you use the App, so events from your device can
+          be linked to each other. Analytics never includes the content of
+          your messages, your attachments or your API keys. The App doesn't
+          currently have a setting to turn analytics off.
         </p>
 
-        <h2>7. Data Security</h2>
+        <h3>4.4 App integrity (Google Firebase App Check)</h3>
         <p>
-          We implement appropriate security measures to protect against
-          unauthorized access, alteration, disclosure, or destruction of your
-          information. However, no method of electronic transmission or storage
-          is 100% secure, and we cannot guarantee absolute security.
+          To protect our backend services from abuse, the App uses Firebase App
+          Check. When the App launches, it may ask your device's integrity
+          service (Play Integrity on Android, DeviceCheck on iOS) to confirm
+          that it is a genuine copy of the App on a genuine device. See
+          <a href="https://firebase.google.com/support/privacy"
+            >https://firebase.google.com/support/privacy</a
+          >.
         </p>
 
-        <h2>8. Children's Privacy</h2>
+        <h3>4.5 Purchases (RevenueCat, the App Store and Google Play)</h3>
         <p>
-          Our App is not intended for use by children under the age of 13. We do
-          not knowingly collect personal information from children under 13. If
-          we become aware that a child under 13 has provided us with personal
-          information, we will take steps to delete such information.
+          We use RevenueCat to manage in-app purchases. When you view the
+          paywall, buy or restore Pro Access, or the App checks whether you
+          have Pro Access, RevenueCat and the store you use (the Apple App
+          Store or Google Play Billing) process an anonymous RevenueCat user
+          ID, purchase receipts or tokens, and your purchase history.
+          Payments are handled entirely by Apple or Google; we never see your
+          payment card details. See:
         </p>
-
-        <h2>9. Changes to This Privacy Policy</h2>
-        <p>
-          We may update our Privacy Policy from time to time. We will notify you
-          of any changes by posting the new Privacy Policy on this page and
-          updating the "Effective Date" at the top. You are advised to review
-          this Privacy Policy periodically for any changes.
-        </p>
-
-        <h2>10. Your Choices</h2>
-        <p>You can control what information is accessed by:</p>
         <ul>
-          <li>Managing iOS system permissions for the App</li>
-          <li>Choosing which LLM providers to connect with</li>
-          <li>Controlling which local tools you allow the App to access</li>
+          <li>
+            RevenueCat:
+            <a href="https://www.revenuecat.com/privacy"
+              >https://www.revenuecat.com/privacy</a
+            >
+          </li>
+          <li>
+            Apple:
+            <a href="https://www.apple.com/legal/privacy/"
+              >https://www.apple.com/legal/privacy/</a
+            >
+          </li>
+          <li>
+            Google:
+            <a href="https://policies.google.com/privacy"
+              >https://policies.google.com/privacy</a
+            >
+          </li>
         </ul>
 
-        <h2>11. Contact Us</h2>
+        <h3>4.6 Weather (OpenWeatherMap)</h3>
         <p>
-          If you have any questions or concerns about this Privacy Policy,
-          please contact us.
+          The weather tool is off by default. If you turn it on and the
+          assistant uses it, the App sends coordinates or a city name to
+          OpenWeatherMap to get the forecast. See
+          <a href="https://openweather.co.uk/privacy-policy"
+            >https://openweather.co.uk/privacy-policy</a
+          >.
+        </p>
+
+        <h3>4.7 Speech recognition and text to speech</h3>
+        <p>
+          When you dictate, your audio goes to your operating system's speech
+          recognizer (Apple's on iOS, Google's on Android), which may process
+          it on your device or on Apple's or Google's servers under their
+          privacy policies. ChatMCP receives only the transcribed text. Reading
+          responses aloud uses your operating system's voice engine.
+        </p>
+
+        <h3>4.8 Emails you send us</h3>
+        <p>
+          If you send us feedback, or report an AI response, the App opens your
+          email app with a message to feedback@kitsuneapps.com. Nothing is sent
+          unless you send the email yourself. A report email is filled in with
+          the text of the response you reported, the provider and model names,
+          and the App and device versions; you can review and change it before
+          sending. We receive whatever you choose to send, and use it to
+          respond to you and to improve the App.
+        </p>
+
+        <h3>4.9 Legal requirements</h3>
+        <p>
+          We may disclose the limited information we hold (such as analytics
+          data or emails you've sent us) if required by law or in response to
+          valid requests by public authorities.
+        </p>
+
+        <h2>5. What We Don't Do</h2>
+        <ul>
+          <li>ChatMCP has no ads and contains no advertising SDKs.</li>
+          <li>
+            We don't use your device's advertising identifier (the IDFA on
+            iOS or the Advertising ID on Android), and we never ask to track
+            you across other companies' apps or websites. On Android,
+            Advertising ID collection is explicitly disabled.
+          </li>
+          <li>We don't sell your data or share it with data brokers.</li>
+          <li>
+            We don't store your chats, attachments or API keys on our servers.
+          </li>
+          <li>
+            We don't read your text messages, emails or call history.
+          </li>
+        </ul>
+
+        <h2>6. Retention and Deletion</h2>
+        <ul>
+          <li>
+            <strong>On your device:</strong> chats, settings and API keys stay
+            until you delete chats, clear the App's data or uninstall the App.
+          </li>
+          <li>
+            <strong>Analytics:</strong> Firebase deletes detailed analytics
+            data automatically after no more than 14 months. Because this data
+            isn't linked to your name or email address, we usually can't tell
+            which data is yours. If you have a question or a deletion request,
+            email
+            <a href="mailto:feedback@kitsuneapps.com"
+              >feedback@kitsuneapps.com</a
+            >
+            and we'll do what we can.
+          </li>
+          <li>
+            <strong>Emails you send us:</strong> kept for as long as we need
+            them to respond to you and improve the App, then deleted. You can
+            ask us to delete them at any time.
+          </li>
+          <li>
+            <strong>AI providers, MCP servers and other services:</strong>
+            their retention is set by their own policies (see Section 4).
+          </li>
+        </ul>
+
+        <h2>7. Security</h2>
+        <p>
+          API keys are kept in your platform's secure storage. Traffic between
+          the App and the built-in AI providers, Firebase, RevenueCat and
+          OpenWeatherMap uses encrypted HTTPS connections.
+        </p>
+        <p>
+          If you add a Custom provider with an address that starts with
+          <code>http://</code> instead of <code>https://</code> (for example, a
+          server on your home network), traffic to that server, including your
+          messages and tool results, is <strong>not encrypted</strong>. Use
+          <code>https://</code> whenever the server supports it.
+        </p>
+        <p>
+          No method of electronic transmission or storage is 100% secure, and
+          we can't guarantee absolute security.
+        </p>
+
+        <h2>8. Children</h2>
+        <p>
+          ChatMCP is intended for adults 18 and over and is not directed at
+          children. We do not knowingly collect personal information from
+          children under 13. If you believe a child has sent us personal
+          information, contact us and we will delete it.
+        </p>
+
+        <h2>9. Your Choices and Permissions</h2>
+        <ul>
+          <li>
+            <strong>On iOS:</strong> open the Settings app, go to Apps &rarr;
+            ChatMCP (on older iOS versions, scroll down to ChatMCP), and turn
+            Contacts, Calendars, Reminders, Location, Photos, Camera,
+            Microphone and Speech Recognition on or off. You can also manage
+            them under Settings &rarr; Privacy &amp; Security.
+          </li>
+          <li>
+            <strong>On Android:</strong> open Settings &rarr; Apps &rarr;
+            ChatMCP &rarr; Permissions, and allow or deny Contacts, Calendar,
+            Location, Photos and videos, Camera and Microphone. (The exact
+            menu names can vary by device.)
+          </li>
+          <li>
+            <strong>In the App:</strong> you can turn individual tools off so
+            the assistant can't use them, choose which AI provider receives
+            your messages, and remove MCP servers.
+          </li>
+          <li>
+            <strong>Deleting your data:</strong> delete chats in the App, or
+            clear the App's data or uninstall it to remove everything stored
+            on your device. To delete analytics data, see Section 6. To delete
+            data held by an AI provider or MCP server, contact that service.
+          </li>
+        </ul>
+
+        <h2>10. International Users and Your Rights</h2>
+        <p>
+          The services described in Section 4 may process information in
+          countries other than the one where you live, including the United
+          States. Depending on where you live, you may have rights to access,
+          correct or delete personal information, or to object to how it is
+          used. To make a request about data we control (analytics data and
+          emails you've sent us), contact us using the details below.
+        </p>
+        <p>
+          We use analytics because we have a legitimate interest in
+          understanding how the App is used and fixing problems. If you are in
+          the European Economic Area or the United Kingdom, you can also
+          complain to your local data protection authority.
+        </p>
+        <p>
+          We do not sell your personal information, and we do not share it for
+          cross-context behavioral advertising, as those terms are used in
+          California law.
+        </p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When we do, we
+          will post the new version on this page and update the "Effective
+          Date" at the top. If the changes are significant, we may also let you
+          know in the App. Please review this page periodically.
+        </p>
+
+        <h2>12. Contact Us</h2>
+        <p>
+          Kitsune Apps, LLC<br />
+          Email:
+          <a href="mailto:feedback@kitsuneapps.com">feedback@kitsuneapps.com</a>
         </p>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 Kitsune Apps, LLC. All rights reserved.</p>
+      <p>
+        &copy; 2026 Kitsune Apps, LLC. All rights reserved. |
+        <a href="terms.html">Terms of Service</a>
+      </p>
     </footer>
   </body>
 </html>
